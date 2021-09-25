@@ -1,0 +1,132 @@
+@charset "ISO-8859-1";
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+  padding: 0;
+}
+
+h2{
+  background: linear-gradient(-135deg, #f58727, #f7522d);
+  color: white;
+  margin: 0px;
+  padding: 5px 0px 5px 8px;
+  border-bottom: 2px solid black;
+}
+
+.bg-light{
+  background-color:#f5876e !important;
+  border-bottom: 2px solid black;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+  color: rgba(0, 0, 0, 0.99);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.full-form{
+  background: url(https://cdn.pixabay.com/photo/2017/10/22/20/42/table-2879213_960_720.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+input[type="text"],  input[type="password"], input[type="email"], input[type="number"]{
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  outline: none;
+  height: 40px;
+  font-size: 18px;
+}
+
+.nav-item{
+  padding: 5px 20px 5px 20px;
+}
+
+.column {
+  width: 50%;
+  padding: 10px;
+  height: auto;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+
+#flex-parent-element {
+    margin: auto;
+    display: flex;
+    width: auto;
+    flex: 50%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;  
+    text-align: center;
+    min-height: 87vh;
+    
+}
+
+#flex-child-element {
+display: flex;
+    flex: 50%;
+    margin: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center
+}
+
+#flex-child-element1 {
+    display: flex;
+    flex: 50%;
+    margin: 10px;
+    flex-direction: column;
+}
+
+#user-pass-info{
+  display: flex;
+}
+
+.form-floating{
+  width: 100%;
+  padding:10px;
+}
+
+.btn{
+    margin: 15px;
+    width: 75%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    transition: 0.5s;
+    font-size: 12px;
+  }
+
+  input[type="text"],  input[type="password"], input[type="email"], input[type="number"]{
+    font-size: 12px;
+  }
+
+  .btn{
+    font-size: 12px;
+  }  
+}
+
+@media screen and (max-width: 991px) {
+  .nav-link.active{
+  width: 138.6px;
+  padding-left: 15px;
+}
+}
